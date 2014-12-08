@@ -18,10 +18,11 @@ Currently the decks only take this format
 2x   Tectonic Edge
 ```
 
-#### Installation
+### Installation
 
 **Requirements**
-- MongoDB
+* [MongoDB](http://www.mongodb.org/)
+    * [Installation instructions](http://docs.mongodb.org/manual/installation/)
 - Node
 - Bower?
 
@@ -31,15 +32,17 @@ _Need to update these steps better_
 * cd `deckbuilder`
 * run `npm install`
 
-##### Running it
+### Running it
 * start mongodb
 * run `npm start` in `apiserver`
 * run `npm start` in `deckbuilder`
 * go to http://localhost:8000/app/
 
-##### Todo
+### Todo
 * cleanup files
 * make one npm install?
 * make one npm start (if possible?)
 * integrate gulp
 * fix input formats
+* add pricing data
+* improve ui
