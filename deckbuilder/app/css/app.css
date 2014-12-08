@@ -1,0 +1,120 @@
+/* app css stylesheet */
+
+body {
+    background: #fafafa;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Open Sans', sans-serif;
+}
+
+.content.deck {
+    background: #fff;
+    border-bottom: 3px solid #d8d8d8;
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    max-width: 650px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+}
+
+.content.deck ul {
+    list-style: none;
+}
+
+.content.deck .heading {
+    height: 150px;
+    border-radius: 5px 5px 0 0;
+    margin: 0;
+    padding: 0;
+}
+
+.content.deck .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    background: #000;
+}
+
+.content.deck .heading:hover .bg img {
+
+}
+
+.content.deck .bg img {
+    width: 700px;
+    max-width: 700px;
+    left: -40px;
+    position: absolute;
+    overflow: visible;
+    background: #000;
+    -webkit-filter: blur(10px);
+    margin-top: -120px;
+    z-index: 0;
+    opacity: 0.9;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.content.deck .heading .circle {
+    z-index: 5;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.content.deck .heading .circle img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 5px solid #fff;
+}
+
+.content.deck h3.sub {
+    color: #fff;
+    font-weight: 800;
+    text-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    margin-left: 140px;
+margin-top: 71px;
+    z-index: 5;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.content.deck .heading h1 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-left: 140px;
+    font-weight: 800;
+    z-index: 5;
+position: relative;
+text-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
+line-height: 1em;
+}
+
+
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+.menu > li {
+  display: inline;
+}

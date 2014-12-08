@@ -1,0 +1,41 @@
+<div class="content deck row">
+
+    <hgroup class="heading">
+
+        <h3 class="sub">{{deck.format}}</h3>
+        <h1>{{deck.name}}</h1>
+
+        <span class="circle">
+            <img src="http://mtgimage.com/card/{{deck.featuredCard}}.crop.jpg" alt="">
+
+        </span>
+
+        <span class="bg">
+            <img src="http://mtgimage.com/card/{{deck.featuredCard}}.crop.jpg" alt="">
+        </span>
+
+    </hgroup>
+
+    <div class="small-6 columns">
+
+        <h3>Main Deck</h3>
+        <ul ng-repeat="card in deck.mainDeck">
+
+            <li>{{card.qty}}x {{card.name}}</li>
+
+        </ul>
+
+    </div>
+
+    <div class="small-6 columns">
+
+        <h3>Sideboard</h3>
+        <ul ng-repeat="card in deck.sideboard">
+
+            <li>{{card.qty}}x {{card.name}}</li>
+
+        </ul>
+
+    </div>
+
+</div>

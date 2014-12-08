@@ -1,0 +1,29 @@
+
+<h1>Decks</h1>
+
+<table class="row">
+
+    <thead>
+        <tr>
+
+            <td>Name</td>
+            <td>Format</td>
+            <td>Cards</td>
+            <td></td>
+
+        </tr>
+
+    </thead>
+
+    <tr ng-repeat="deck in decks">
+
+        <td>{{deck.name}} - {{deck._id}}</td>
+        <td>{{deck.format}}</td>
+        <td>
+            <a href="#/deck/{{deck._id}}">View</a>
+        </td>
+        <td><button class="button small" ng-click="deleteDeck(deck._id)">Delete</button></td>
+
+    </tr>
+
+</table>

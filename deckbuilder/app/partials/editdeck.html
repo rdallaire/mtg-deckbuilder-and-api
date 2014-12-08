@@ -1,0 +1,59 @@
+<h1>Create Deck</h1>
+
+
+<form name="createdeck" ng-submit="createDeck()">
+
+    <div class="row">
+
+        <label for="name">Name</label>
+        <input ng-model="deck.name" name="name">
+
+    </div>
+    <div class="row">
+
+        <label for="format">Format</label>
+        <!-- <input ng-model="deck.format" name="format"> -->
+
+        <select name="format" id="format-select" ng-model="deck.format">
+
+            <option value="Standard">Standard</option>
+            <option value="Modern">Modern</option>
+            <option value="Legacy">Legacy</option>
+            <option value="Vintage">Vintage</option>
+            <option value="EDH/ Commander">EDH/ Commander</option>
+            <option value="Casual">Casual</option>
+            <option value="Cube">Cube</option>
+            <option value="Draft">Draft</option>
+            <option value="Sealed">Sealed</option>
+            <option value="Other">Other</option>
+
+        </select>
+
+    </div>
+
+    <div class="row">
+
+        <div class="small-6 columns">
+
+            <label for="deck">Deck</label>
+            <textarea name="deck" id="deck" cols="30" rows="10" ng-model="deck.cards" style="height: 300px;">
+
+            </textarea>
+
+        </div>
+
+        <div class="small-6 columns">
+
+            <label for="type">Sideboard</label>
+            <textarea name="sideboard" id="sideboard" cols="30" rows="10" ng-model="deck.sbcards" style="height: 300px;">
+
+            </textarea>
+
+        </div>
+
+
+    </div>
+
+    <button class="button">Submit</button>
+
+</form>
